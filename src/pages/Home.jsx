@@ -31,8 +31,8 @@ function Home2() {
           </div>
 
           <div class="position-absolute start-50 translate-middle d-inline-block description">
-            <p className="fs-3 text-white cssanimation fadeIn">
-              <span className="medium-blue" style={{ fontFamily: "Trirong, sans-serif"}}>
+            <p className="fs-2 text-white cssanimation fadeIn">
+              <span className="medium-blue" style={{ fontFamily: "Trirong, sans-serif", color:"#3A5A40"}}>
                 Smart Solutions for Modern Living.
               </span>
             </p>

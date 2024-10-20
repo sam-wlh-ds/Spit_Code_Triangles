@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { RiHomeWifiFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [openSidebar, setOpenSideBar] = useState(false);
@@ -35,7 +36,8 @@ const Navbar = () => {
               className="fs-2"
               style={{ fontFamily: "Trirong, sans-serif" }}
             >
-              <strong>GRHA</strong>
+              <RiHomeWifiFill />
+              <strong className="m-3">GRHA</strong>
             </a>
           </li>
           <button onClick={handleSidebar} type="button" className="btn fs-2 mx-1">
