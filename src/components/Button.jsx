@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CardBasic from '/CardBasic.jsx';
+import CardBasic from './CardBasic';
+import Light from './Light';
 
 const Button = ({ type, text }) => {
 
@@ -7,15 +8,23 @@ const Button = ({ type, text }) => {
 
   const [lightCount, setLightCount] = useState(0);
   const [cards, setCards] = useState([]);
+  const [lights, setLights] = useState([]);
 
   const handleClick = () => {
 
 
     if (type === "green" && text === "Add Light") {
-      console.log("add light");
-      setLightCount(lightCount + 1);
-      console.log(lightCount);
-      setCards(prevCards => [...prevCards, prevCards.length]);
+      // setLights(prevLights => [...prevLights, prevLights.length]);
+      console.log(lights);
+
+      const newId = lights.length > 0 ? Math.max(...lights.map(light => light.id)) + 1 : 1;
+      setLights(prevLights => [...prevLights, { id: newId }]);
+
+    }
+    else if (type === "red" && text === "Remove Light") {
+      setLights(prevLights => prevLights.filter(light => light.id !== id));
+      // setLights(prevLights => [...prevLights, (prevLights.length - 1)]);
+      console.log(lights)
     }
   }
 
@@ -27,8 +36,9 @@ const Button = ({ type, text }) => {
 
       <button type="button" className={nameOfClass} onClick={handleClick}> {text}</button >
       <div>
-        {cards.map((cardIndex) => (
-          <Card key={cardIndex} index={cardIndex} />
+        <Light />
+        {lights.map((lightIndex) => (
+          <Light key={lightIndex} index={lightIndex} />
         ))}
       </div>
     </main>
