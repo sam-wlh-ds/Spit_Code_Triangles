@@ -11978,4 +11978,48 @@ textarea.form-control-lg {
   --dark-blue: #023047;
   --yellow: #FFB703;
   --orange: #FB8500;
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.medium-blue {
+  color: var(--medium-blue);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+input::-moz-placeholder {
+  color: white; /* Change placeholder text color */
+  opacity: 1; /* Ensure full opacity */
+  text-align: center;
+}
+
+input::placeholder {
+  color: white; /* Change placeholder text color */
+  opacity: 1; /* Ensure full opacity */
+  text-align: center;
+}
+
+.center {
+  margin-left: 37%;
+}
+
+.heading {
+  margin-top: 5%;
+}
+
+.description {
+  margin-top: 620px;
 }/*# sourceMappingURL=index.css.map */
