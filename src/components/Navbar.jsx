@@ -17,6 +17,14 @@ const Navbar = () => {
   const visual = ()=>{
     navigate("/visualization");
   }
+
+  const cam = ()=>{
+    navigate("/cam");
+  }
+
+  const home = ()=>{
+    navigate("/");
+  }
   return (
 
     <main>
@@ -29,10 +37,10 @@ const Navbar = () => {
         {openSidebar && (
           <ul className='sidebar'>
             <button onClick={handleSidebar} type="button" class="btn-close" aria-label="Close"></button>
+            <li><a onClick={home}>Home</a></li>
             <li><a onClick={dashboard}>Dashboard</a></li>
             <li><a onClick={visual}>Energy Consumption</a></li>
-            <li><a href='#'>Security Monitoring</a></li>
-            <li><a href='#'>Environmental Condition Tracking</a></li>
+            <li><a onClick={cam}>Security Monitoring</a></li>
           </ul>
         )}
       </nav>

@@ -2,6 +2,7 @@
 import Home from '../pages/Home'
 import Dashboard_Page from '../pages/Dashboard_Page'
 import Visualization from '../pages/Visualization';
+import Cam from '../pages/Cam';
 
 // router import
 const {createBrowserRouter}  = require("react-router-dom");
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path:"/visualization",
         element: <Visualization/>
+    },
+    {
+        path:"/cam",
+        element: <Cam/>
     }
 ])
 
