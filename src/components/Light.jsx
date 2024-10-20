@@ -10,9 +10,10 @@ const Light = () => {
       <img src={lightbulb} class="card-img-top" alt="light" />
       <div class="card-body">
         <h5 class="card-title text-center">LIGHT</h5>
-        <h6 class="card-title text-center">Bedroom</h6>
+        {/* <h6 class="card-title text-center">Bedroom</h6> */}
 
         <ToggleButton />
+    
       </div>
     </div>
   );
