@@ -12118,4 +12118,9 @@ nav li:first-child {
   background-color: var(--dark-red); /* Customize this */
   color: black; /* Customize this */
   transform: scale(1.1);
+}
+
+.graph {
+  width: 50rem;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */

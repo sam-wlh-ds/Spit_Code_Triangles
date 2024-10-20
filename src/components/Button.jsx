@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CardBasic from './CardBasic';
 import Light from './Light';
 
 const Button = ({ type, text }) => {
