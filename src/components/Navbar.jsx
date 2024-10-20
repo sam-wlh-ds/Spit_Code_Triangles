@@ -14,11 +14,11 @@ const Navbar = () => {
       <nav>
         <ul>
           <li><a href='#'>Smart Home</a></li>
-          <button onClick={handleSidebar} type="button" class="btn">&#8801;</button>
+          <button onClick={handleSidebar} type="button" className="btn">&#8801;</button>
         </ul>
         {openSidebar && (
           <ul className='sidebar'>
-            <button onClick={handleSidebar} type="button" class="btn-close" aria-label="Close"></button>
+            <button onClick={handleSidebar} type="button" className="btn-close" aria-label="Close"></button>
             <li><a href='#'>Dashboard</a></li>
             <li><a href='#'>Energy Consumption</a></li>
             <li><a href='#'>Security Monitoring</a></li>
