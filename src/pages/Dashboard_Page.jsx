@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import Light from "../components/Light";
 
 const Dashboard_Page = () => {
+
   return (
     <main>
       <Navbar />

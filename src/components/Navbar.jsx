@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav>
         <ul>
           <li><a href='#'>Smart Home</a></li>
-          <button onClick={handleSidebar} type="button" class="btn">&#8801;</button>
+          <button onClick={handleSidebar} type="button" className="btn">&#8801;</button>
         </ul>
         {openSidebar && (
           <ul className='sidebar'>
