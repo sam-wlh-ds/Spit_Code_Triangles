@@ -11978,6 +11978,10 @@ textarea.form-control-lg {
   --dark-blue: #023047;
   --yellow: #FFB703;
   --orange: #FB8500;
+  --green: #55a630;
+  --dark-green: #007f5f;
+  --red: #f25c54;
+  --dark-red: #e0092d;
 }
 
 .light-blue {
@@ -12091,4 +12095,27 @@ nav li:first-child {
 
 .sidebar a {
   width: 100%;
+}
+.sidebar a .btn-green {
+  background-color: var(--green);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: var(--dark-green); /* Customize this */
+  color: black; /* Customize this */
+  transform: scale(1.1);
+}
+
+.btn-red {
+  background-color: var(--red);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: var(--dark-red); /* Customize this */
+  color: black; /* Customize this */
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
