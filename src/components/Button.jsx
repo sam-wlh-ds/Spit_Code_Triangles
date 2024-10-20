@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CardBasic from '/CardBasic.jsx';
 
 const Button = ({ type, text }) => {
 
