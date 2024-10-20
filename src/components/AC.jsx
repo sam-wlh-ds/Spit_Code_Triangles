@@ -5,7 +5,7 @@ import { TbAirConditioning } from "react-icons/tb";
 const AC = () => {
   return (
     <div>
-      <div class="card " style={{ width: "11rem" }}>
+      <div class="card " style={{ width: "11rem", backgroundColor: "#FEFAE0"}}>
         <TbAirConditioning
           style={{
             width: "100%",

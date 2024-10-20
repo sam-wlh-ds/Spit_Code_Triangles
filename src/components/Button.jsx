@@ -34,8 +34,8 @@ const Button = ({ type, text }) => {
     <main>
 
       <button type="button" className={nameOfClass} onClick={handleClick}> {text}</button >
-      <div>
-        <Light />
+      <div style={{ display: 'inline-flex' }} >
+        <Light/>
         {lights.map((lightIndex) => (
           <Light key={lightIndex} index={lightIndex} />
         ))}
