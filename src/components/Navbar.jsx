@@ -13,15 +13,16 @@ const Navbar = () => {
 
       <nav>
         <ul>
-          <li><a href='#'>Code Triangles</a></li>
-          <li onClick={handleSidebar}>X</li>
+          <li><a href='#'>Smart Home</a></li>
+          <button onClick={handleSidebar} type="button" class="btn">&#8801;</button>
         </ul>
         {openSidebar && (
           <ul className='sidebar'>
-            <li onClick={handleSidebar}>X</li>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About Us</a></li>
-            <li><a href='#'>Contact Us</a></li>
+            <button onClick={handleSidebar} type="button" class="btn-close" aria-label="Close"></button>
+            <li><a href='#'>Dashboard</a></li>
+            <li><a href='#'>Energy Consumption</a></li>
+            <li><a href='#'>Security Monitoring</a></li>
+            <li><a href='#'>Environmental Condition Tracking</a></li>
           </ul>
         )}
       </nav>

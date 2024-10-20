@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
+import {useNavigate} from "react-router-dom";
 
 function Home2() {
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate("/dashboard");
+  }
   return (
     <>
       <div className="position-relative">
@@ -30,8 +36,8 @@ function Home2() {
                 Smart Solutions for Modern Living.
               </span>
             </p>
-            <button className="btn btn-success mx-10 center cssanimation blurIn">
-              <span className="">Get Started</span>
+            <button className="btn btn-success mx-10 center cssanimation blurIn" onClick={handleClick}>
+              <span className="">Go to Dashboard</span>
             </button>
 
             <div className="position-absolute top-100 start-100 translate-middle d-inline-block">
